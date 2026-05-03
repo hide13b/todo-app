@@ -1,0 +1,16 @@
+name: 初めてのワークフロー
+
+on: 
+  push:
+    branches: [main]
+
+  jobs:
+    hello:
+      runs-on: ubuntu-latest
+
+      steps:
+      - mane: 挨拶
+        run: ech "Hello, GitHub Actions!"
+
+      - name: 現在時刻
+        run: date
